@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Assessoria de Imprensa de Dre. Netles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<header>
+  <h1>Dre. Netles</h1>
+  <p>Assessoria de Imprensa</p>
+  <button id="adminBtn">Área Admin</button>
+</header>
+
+<section class="hero">
+  <h2>Posicionamento estratégico de imagem e mídia</h2>
+  <p>Transformando presença pública em autoridade.</p>
+</section>
+
+<section class="about">
+  <h2>Sobre</h2>
+  <p>
+    A Assessoria de Imprensa de Dre. Netles atua na construção, gestão e fortalecimento
+    de imagem pública. Estratégia, influência e comunicação alinhadas ao seu posicionamento.
+  </p>
+</section>
+
+<section class="benefits">
+  <h2>Diferenciais</h2>
+  <div class="cards">
+    <div>Gestão de crise</div>
+    <div>Relacionamento com mídia</div>
+    <div>Posicionamento estratégico</div>
+  </div>
+</section>
+
+<section class="booking">
+  <h2>Agendamento</h2>
+
+  <form id="form">
+    <input type="date" id="date" required>
+    <div id="times"></div>
+
+    <input type="text" id="name" placeholder="Seu nome" required>
+    <input type="email" id="email" placeholder="Seu e-mail" required>
+    <input type="text" id="phone" placeholder="Telefone (opcional)">
+    <textarea id="reason" placeholder="Motivo do agendamento" required></textarea>
+
+    <div id="summary"></div>
+
+    <button type="submit">Confirmar</button>
+  </form>
+
+  <div id="msg"></div>
+</section>
+
+<footer>
+  <p>© Dre. Netles — Comunicação estratégica e presença de impacto</p>
+</footer>
+
+<div id="adminPanel" class="hidden">
+  <h2>Agendamentos</h2>
+  <input type="date" id="filterDate">
+  <div id="list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
